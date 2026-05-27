@@ -6,11 +6,13 @@ A computer vision pipeline implementing and comparing static and dynamic backgro
 This project explores fundamental and advanced methods for moving object detection in video surveillance contexts. By developing two distinct versions—one utilizing a custom median-based background model with morphological operations, and another leveraging OpenCV's dynamic GSOC subtractor—this project demonstrates a structured evolution of robust foreground extraction algorithms.
 
 ## Project Structure
-- `detect.py`: Version 1 implementation using manual median frame differencing and summing techniques.
-- `get_background.py`: Helper module for Version 1 to compute the static background model from randomly sampled frames.
-- `detectV2.py`: Version 2 optimized implementation utilizing the dynamic GSOC background subtractor.
-- `Moving Object Detection...Technique.pdf`: Reference literature for the base methodology.
-- `OpenCV_ Eroding and Dilating.pdf`: Reference literature for morphological operations.
+- `Version 1`:
+  - `detect.py`: Version 1 implementation using manual median frame differencing and summing techniques.
+  - `get_background.py`: Helper module for Version 1 to compute the static background model from randomly sampled frames.
+  - `Report - Moving Object Detection using Median Background Modeling and Morphological Dilation.pdf`: Report of the Version 1 implementation.
+- `Version 2`:
+  - `detectV2.py`: Version 2 optimized implementation utilizing the dynamic GSOC background subtractor.
+  - `Report - Robust Moving Object Detection using GSOC Background Subtraction.pdf`: Report of the Version 2 optimized implementation.
 
 ## Key Phases
 1. **Background Initialization:** Implemented both a static median temporal filter across random initial frames (V1) and a dynamically updating background model (V2) to establish a reference scene.
